@@ -68,38 +68,126 @@
     /* margin: 0;
     height: 4000px; */
   /* } */
-  .box{
+  /* .box{
     width: 100px;
     height:100px;
   }
   .red-box{
     background-color: red;
     position: relative;
-  }
+  } */
 /* .green-box{
   background-color: green;
   position: relative;
   left: 100px;
   top: 100px; */
 /* } */
-.green-box{
-  background-color: green;
+/* .green-box{
+  background-color: green; */
   /* position: fixed; */
   /* left: 100px;
   top:100px */
   /* position:sticky;
   top: 0; */
-  position: absolute;
+  /* position: absolute;
   left: 0;
   top: 0;
-}
+} */
 /* .blue-box{
   background-color: blue;
 } */
+ /* .box{
+  width:100px;
+  height:100px;
+ }
+ .red-box{
+  background-color:red;
+  position:relative;
+  z-index:10;
+ }
+ .green-box{
+  background-color: green;
+  position:absolute;
+  left:0;
+  top:0;
+ } */
+  /* img{
+    float:left;
+    margin-right:1rem;
+  } */
+   /* div{
+    color:white;
+   }
+   .red-box{
+    background-color:red;
+    float:left;
+   }
+   .blue-box{
+    background-color:blue;
+    float:left
+   } */
+    
+    .container{
+      width:400px;
+      padding:1rem;
+      margin:0 auto;
+      border:1px solid black;
+      background-color:#ccc;
+    }
+    .box{
+      width:100px;
+      height:100px;
+      float:left;
+    }
+    .red-box{
+      background-color:red;
+    }
+    .blue-box{
+      background-color:blue;
+    }
+    .container::after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+  /* .box{
+    width:100px;
+    height:100px;
+  }
+  .red-box{
+    background-color:red;
+    float:left;
+  }
+  .green-box{
+    background-color:green;
+    float:left;
+  }
+  .blue-box{
+    background-color:blue;
+    clear:left;
+  } */
 </style>
 </head>
 <body>
-
+  <!-- <div class="box red-box"></div>
+  <div class="box green-box"></div>
+  <div class="box blue-box"></div> -->
+  <div class="container">
+    <div class="box red-box"></div>
+    <div class="box blue-box"></div>
+  </div>
+  <!-- <div class="red-box">red-box</div>
+  <div class="blue-box">blue-box</div> -->
+  <!-- <img src="/루피.png" alt="루피">
+  <p>하늘에 계신 우리 아버지여 이름이 거룩히
+ 여김을 받으시오며 나라에 임하옵시며 뜻이 하늘에서 
+ 이루어진것같이 땅에서도 이루어지이다
+오늘날 우리에게 일용할 양식을 주시고 우리가 우리에게
+죄지은 것 같이 우리 죄를 사하여 주옵시고 우리를 시험에
+들게 하지마옵시고 다만 악에서 구하옵소서 대개나라와 권세와
+영광이 아버지께 영원히 있사옵나이다 아멘 아멘아멘아멘아멘아멘</p> -->
+<!-- <div class=" box red-box"></div>
+<div class="box green-box"></div> -->
   <!-- <div>
     <p class="first">lorem1</p>
     <p class="second">lorem2</p>
@@ -107,8 +195,8 @@
   <!-- <div class="box red-box"></div>
   <div class="box green-box"></div>
   <div class="box blue-box"></div> -->
-  <div class="box red-box"></div>
-  <div class="box green-box"></div>
+  <!-- <div class="box red-box"></div>
+  <div class="box green-box"></div> -->
   <!-- <div class="box blue-box"></div> -->
 </body>
 </html>
