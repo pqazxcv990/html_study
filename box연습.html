@@ -126,7 +126,7 @@
     background-color:blue;
     float:left
    } */
-    
+/*     
     .container{
       width:400px;
       padding:1rem;
@@ -149,7 +149,7 @@
       content:"";
       display:block;
       clear:both;
-    }
+    } */
   /* .box{
     width:100px;
     height:100px;
@@ -166,16 +166,55 @@
     background-color:blue;
     clear:left;
   } */
+   /* .red-box{
+    width:100px;
+    height:100px;
+    background-color:red;
+   }
+   .red-box:hover{
+    background-color:blue;
+   } */
+  .container .bar{
+    width:10px;
+    transition-property: width;
+    transition-duration:5s;
+  }
+  .container:hover .bar{
+    width:110px;
+  }
+  .bar:nth-child(1){
+    transition-timing-function:linear;
+  }
+  .bar:nth-child(2){
+    transition-timing-function:ease;
+  }
+  .bar:nth-child(3){
+    transition-timing-function:ease-in;
+  }
+  .bar:nth-child(4){
+    transition-timing-function:ease-in-out; 
+  }
+  .bar:nth-child(5){
+    transition-timing-function:ease-in-out;
+  }
 </style>
 </head>
 <body>
+  <div class="container">
+    <div class="bar">linear</div>
+    <div class="bar">ease</div>
+    <div class="bar">ease-in</div>
+    <div class="bar">ease-out</div>
+    <div class="bar">ease-in-out</div>
+  </div>
+  <!-- <div class="red-box"></div> -->
   <!-- <div class="box red-box"></div>
   <div class="box green-box"></div>
   <div class="box blue-box"></div> -->
-  <div class="container">
+  <!-- <div class="container">
     <div class="box red-box"></div>
     <div class="box blue-box"></div>
-  </div>
+  </div> -->
   <!-- <div class="red-box">red-box</div>
   <div class="blue-box">blue-box</div> -->
   <!-- <img src="/루피.png" alt="루피">
