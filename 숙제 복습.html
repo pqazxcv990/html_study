@@ -6,7 +6,11 @@
   <title>Document</title>
   <style>
     #phonecertification { width: 500px; border:1px solid #000; border-radius:8px}
-    
+    #phonecertification .title { padding:24px; border-bottom:1px solid #dddddd}
+    #phonecertification .content {padding:40px; border-bottom:1px solid #666}
+    #phonecertification .content .txt { margin-bottom:24px;}
+    #phonecertification .content .infotable {width: 100%; table-layout:fixed; border-top: 1px solid #000; border-bottom:1px solid #d4d4d4; border-collapse: collapse;}
+    #phonecertification .content .infotable thead th { background-color: #d3d3d3; padding: 12px 0px; color: #444;}
   </style>
 </head>
 <body>
@@ -15,7 +19,7 @@
     <div class="content">
       <div class="txt">고객님의 계정을 보호하기 위해 등록된 인증 수단으로 추가 인증을 진행합니다.<br>등록된 휴대폰 정보로 인증코드를 전송후 입력해주세요.</div>
       <div class="info">
-        <table class="tnfotable">
+        <table class="infotable">
           <colgroup>
           <col width="50%" />
           <col width="50%" />
