@@ -5,14 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    
+    /* p{
+      color: pink;
+    } */
+     /* *{
+      color: pink;
+     } */
+      /* #루피2{
+        color: pink;
+      } */
+      /* .루피3{
+        color: pink;
+      } */
+    /* a[href]{
+      color: pink;
+    } */
+     /* label[for]{
+      color: pink;
+     } */
+      /* p, #루피3, .루피{
+        color: pink;
+      } */
+      /* tr > th{
+        color: pink;
+      } */
+       
   </style>
 </head>
 <body>
   <img src="루피.png" alt="루피사진">
+  <a href="#" target="_blank">루피 죠아~</a>
   <form action="#"  method="pos">
     <fieldset>
-      <legend>루피 모음</legend>
+      <legend class="루피3">루피 모음</legend>
       <p>
     <label for="루피">루피댱</label>
     <input type="text" id="루피" value="루피댱">
@@ -51,30 +76,36 @@
     <input type="tel" placeholder="힌트">
   </fieldset>
   <table>
-    <caption>제목</caption>
+    <caption>루피 상점</caption>
+    <col style="width:80px;">
+    <colgroup span="2" style="width: 150px;"></colgroup>
+    <col style="width: 80px;">
     <tr>
-      <th>번호</th>
-      <th>상품명</th>
-      <th>수량</th>
-      <th>가격</th>
+      <th scope="col">번호</th>
+      <th scope="col">상품명</th>
+      <th scope="col">수량</th>
+      <th scope="col">가격</th>
     </tr>
     <tr>
-      <td>1</td>
+      <th scope="row">1</th>
       <td>루피 양말</td>
       <td>1개</td>
       <td>2000원</td>
     </tr>
     <tr>
-      <td>2</td>
+      <th scope="row">2</th>
       <td>루피 사탕</td>
-      <td>1개</td>
-      <td>1000원</td>
+      <td>2개</td>
+      <td rowspan="2">1000원</td> 
     </tr>
     <tr>
-      <td>1</td>
+      <th scope="row">3</th>
       <td>루피 젤리</td>
       <td>1개</td>
-      <td>2000원</td>
+    </tr>
+    <tr>
+      <td>총 금액</td>
+      <td colspan="3">6,500원</td>
     </tr>
   </table>
   </form>
