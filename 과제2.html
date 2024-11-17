@@ -4,14 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    #loginPage .title {padding-bottom:10px; border-bottom:1px solid #000; }
+    #loginPage .content { text-align: center; padding:100px;}
+    #loginPage .content .h1  { margin-bottom: 50px ;}
+  </style>
 </head>
 <body>
-  <div id="login page">
-    <div class="title">bizgo</div>
+  <div id="loginPage">
+    <div class="title" style="color: blue; font-size: 30px;"   ><strong>Bizgo</strong></div>
     <div class="content">
-      <
+      <div class="h1" style="font-size: 30px;">로그인</div>
+      <div class="id">
+        <div>아이디 <sup style="color: red;">*</sup></div>
+          <input type="text" id="user id" placeholder="아이디를 입력해주세요.">
+        </label>
+      </div>
+      <div class="passwd">
+        <div>비밀번호 <sup style="color: red;">*</sup></div>
+        <input type="password" id="passwd" placeholder="비밀번호를 입력해주세요.">
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="box" name="id save" value="아이디 저장">
+        <label for="box">아이디 저장</label>
+      </div>
+      <div class="login box">
+        <input type="button" id="loginBox" value="로그인">
+      </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <div>meet.google.com에서 내 화면을 공유하는 중입니다. <button id="stopBox">공유중지</button><ins> 숨기기</ins></div>
+    </div>
   </div>
 </body>
 </html>
