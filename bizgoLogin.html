@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #loginPage .title {padding-bottom:60px; border-bottom:1px solid #d3d3d3; }
+    #loginPage .title .logo { display:inline-block; color: blue; font-size: 40px; font-weight:800 ; position:relative; bottom:10px}
+    #loginPage .title .left { display:inline-block; float: left; position:relative; left:20px; }
+    #loginPage .title .right { display:inline-block; float:right; }
+    #loginPage .title .service {  font-weight:500; display:inline-block; position:relative; left:80px; bottom:15px } 
+    #loginPage .title .developer {  font-weight:500; display:inline-block; position:relative; left:140px; bottom:15px} 
+    #loginPage .title .customerService { font-weight:500; display:inline-block; position:relative; left:200px; bottom:15px}
+    #loginPage .title #loginButton {  padding:10px 30px; border-radius:8px; border:1px solid #d3d3d3; background-color:white; position:relative; right:30px;  position:relative; top:5px }
+    #loginPage .title #signUp {  padding: 10px 30px; border-radius:8px; border:1px solid #d3d3d3; background-color:white; position:relative; right:20px;  position:relative; top:5px } 
+    #loginPage .content { text-align: center; padding:200px 730px;}
+    #loginPage .content .h1  { margin-bottom: 50px ;}
+    #loginPage .footer {text-align: center;}
+    #loginPage .content #userId { width: 450px; height: 40px; margin-bottom:20px; border-radius: 4px; border:1px solid #d3d3d3}
+    #loginPage .content #passwd { width: 450px; height: 40px; margin-bottom:20px; border-radius: 4px; border: 1px solid #d3d3d3;}
+    #loginPage .content .checkbox {text-align:left; margin-bottom:20px;}
+    #loginPage .content #loginBox {width: 450px; height: 40px; margin-bottom:20px; background-color: rgb(5, 80, 243); color: white; border-radius: 8px;}
+    #loginPage .footer {border:1px solid #d3d3d3; width:520px; padding:5px 0px; position:absolute; left:37%}
+    #loginPage .footer #stopBox { padding:8px 15px; border-radius:25px; color: white; background-color: rgb(10, 62, 235);}
+  </style>
+</head>
+<body>
+  <div id="loginPage">
+    <div class="title">
+      <div class="left">
+        <div class="logo">Bizgo</div>
+        <div class="service">서비스</div>
+        <div class="developer">개발자</div>
+        <div class="customerService">고객센터</div>
+      </div>
+      <div class="right">
+        <input type="button" id="loginButton" value="로그인">
+        <input type="button" id="signUp" value="회원가입">
+      </div>
+    </div>
+    <div class="content">
+      <div class="h1" style="font-size: 30px;">로그인</div>
+      <div class="id">
+        <div style="text-align: left;">아이디 <sup style="color: red;">*</sup></div>
+          <input type="text" id="userId" placeholder="   아이디를 입력해주세요.">
+        </label>
+      </div>
+      
+      <div class="passwd">
+        <div style="text-align: left;">비밀번호 <sup style="color: red;">*</sup></div>
+        <input type="password" id="passwd" placeholder="   비밀번호를 입력해주세요.">
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="box" name="id save" value="아이디 저장">
+        <label for="box">아이디 저장</label>
+      </div>
+      <div class="login box">
+        <input type="button" id="loginBox" value="로그인">
+      </div>
+    </div>
+    <div class="footer">
+      <div>meet.google.com에서 내 화면을 공유하는 중입니다. <button id="stopBox">공유 중지</button><ins style="color: blue;"> 숨기기</ins></div>
+    </div>
+  </div>
+</body>
+</html>
