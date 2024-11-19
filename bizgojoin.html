@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="common.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <div id="loginPage">
+    <div id="header">
+      <div class="left">
+        <div class="logo">Bizgo</div>
+        <div class="service">서비스</div>
+        <div class="developer">개발자</div>
+        <div class="customerService">고객센터</div>
+      </div>
+      <div class="right">
+        <input type="button" id="loginButton" value="로그인">
+        <input type="button" id="signUp" value="회원가입">
+      </div>
+    </div>
+    <div class="content">
+      <div class="h1" style="font-size: 30px;">로그인</div>
+      <div class="id">
+        <div style="text-align: left;">아이디 <sup style="color: red;">*</sup></div>
+          <input type="text" id="userId" placeholder="   아이디를 입력해주세요.">
+        </label>
+      </div>
+      
+      <div class="passwd">
+        <div style="text-align: left;">비밀번호 <sup style="color: red;">*</sup></div>
+        <input type="password" id="passwd" placeholder="   비밀번호를 입력해주세요.">
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="box" name="id save" value="아이디 저장">
+        <label for="box">아이디 저장</label>
+      </div>
+      <div class="login box">
+        <input type="button" id="loginBox" value="로그인">
+      </div>
+    </div>
+    <div class="footer">
+      <div>meet.google.com에서 내 화면을 공유하는 중입니다. <button id="stopBox">공유 중지</button><ins style="color: blue;"> 숨기기</ins></div>
+    </div>
+  </div>
+</body>
+</html>
