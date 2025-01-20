@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      .header .thead { border:50px; clear:both;}
-      .header .thead .bigcase { font-size:30px;}
-      .header .thead .bigcasePlus { float:right; border:1px solid #ff7f00; border-radius:8px; padding:6px; font-size:15px; color:#ff7f00}
+      .header { clear:both;}
+      .header .bigcasePlus{ border:50px;}
+      .header .bigcase { font-size:30px; float:left; font-weight:550;}
+      .header .bigcasePlus { margin:0px 20px; float:right; border:1px solid #ff7300; border-radius:24px; padding:6px; font-size:15px; color:#ff7300; padding:10px; font-weight:700}
+      .header .login {float:right; margin:0px 20px; padding:10px; font-size:13px; font-weight:500; color:#444444 }
+      .header .singUp {float:right; margin:0px 20px; border:1px solid #444444; background-color:#444444; color: #ffffff; border-radius:8px; padding:8px 10px; }
+      .main .tfoot {clear:right; padding:50px; background-color:black; color:#ffffff; border-width:100px; text-align:center; }
+      .main .tfoot .txt { font-size:40px; font-weight:900 }
+      .main .tfoot .startbox { border:1px solid #ffffff; padding:20px 30px; background-color:white; color:black; font-weight:500; border-radius:4px; margin:50px 750px 0px 750px;}
     </style>
   </head>
   <body>
     <div id="homePage">
       <div class="header">
-        <div class="thead">
-          <div class="bigcase">빅케이스</div>
+          <div class="bigcase">빅케이스.</div>
+          <div class="singUp">회원가입</div>
+          <div class="login">로그인</div>
           <div class="bigcasePlus">빅케이스plus</div>
-        </div>
-        <div class="tbody"></div>
       </div>
-      <div class="nav"></div>
-      <div class="main"></div>
+      <div class="main">
+        <div class="thead"></div>
+        <div class="tbody"></div>
+        <div class="tfoot">
+          <div class="txt">법률 엄무의 효율성을 높이는 최고의 선택, 빅케이스<br>지금 경험해 보세요.</div>
+          <div class="startbox">시작하기</div>
+        </div>
+      </div>
       <div class="footer"></div>
     </div>
   </body>
