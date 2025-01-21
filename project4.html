@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      .header { clear:both;}
+      .header { clear:both; padding-bottom:50px; margin:10px;}
       .header .bigcasePlus{ border:50px;}
       .header .bigcase { font-size:30px; float:left; font-weight:550;}
       .header .bigcasePlus { margin:0px 20px; float:right; border:1px solid #ff7300; border-radius:24px; padding:6px; font-size:15px; color:#ff7300; padding:10px; font-weight:700}
       .header .login {float:right; margin:0px 20px; padding:10px; font-size:13px; font-weight:500; color:#444444 }
       .header .singUp {float:right; margin:0px 20px; border:1px solid #444444; background-color:#444444; color: #ffffff; border-radius:8px; padding:8px 10px; }
+      .main .thead { background-color:#e9e9e9; width:cover; height:600px;}
+      .main .thead .blackbox { padding:50px; background-color:#000000; margin:auto; width:1700px; border-radius:12px; text-align:center;}
+      .main .thead .blackbox .txt { color:#ffffff; font-size:40px; font-weight:900;}
+      .main .thead .blackbox .precedentTxt { color:#ffffff; padding:20px 0px 50px 0px; }
+      .main .thead .blackbox .search { width:600px; height:50px; border-radius:30px; text-align:left;}
       .main .tfoot {clear:right; padding:50px; background-color:black; color:#ffffff; border-width:100px; text-align:center; }
-      .main .tfoot .txt { font-size:40px; font-weight:900 }
-      .main .tfoot .startbox { border:1px solid #ffffff; padding:20px 30px; background-color:white; color:black; font-weight:500; border-radius:4px; margin:50px 750px 0px 750px;}
+      .main .tfoot .txt { font-size:40px; font-weight:900; }
+      .main .tfoot .startbox { border:1px solid #ffffff; padding:10px 80px; background-color:white; color:black; font-weight:500; border-radius:4px; width:100px; margin:auto; margin-top:10px;}
     </style>
   </head>
   <body>
@@ -24,7 +29,15 @@
           <div class="bigcasePlus">빅케이스plus</div>
       </div>
       <div class="main">
-        <div class="thead"></div>
+        <div class="thead">
+          <div class="blackbox">
+            <div class="txt">국내 최다 판례 무료 검색, 빅케이스.</div>
+            <div class="precedentTxt">전체 판례 4,920,479건 하급심 판례 4,719,883건</div>
+            <input type="text" class="search" placeholder="     키워드를 입력해주세요">
+          </div>
+          <div class="5box"></div>
+          <div calss="enough"></div>
+        </div>
         <div class="tbody"></div>
         <div class="tfoot">
           <div class="txt">법률 엄무의 효율성을 높이는 최고의 선택, 빅케이스<br>지금 경험해 보세요.</div>
