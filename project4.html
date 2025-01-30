@@ -3,47 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      .header { clear:both; padding-bottom:50px; margin:10px;}
-      .header .bigcasePlus{ border:50px;}
-      .header .bigcase { font-size:30px; float:left; font-weight:550;}
-      .header .bigcasePlus { margin:0px 20px; float:right; border:1px solid #ff7300; border-radius:24px; padding:6px; font-size:15px; color:#ff7300; padding:10px; font-weight:700}
-      .header .login {float:right; margin:0px 20px; padding:10px; font-size:13px; font-weight:500; color:#444444 }
-      .header .singUp {float:right; margin:0px 20px; border:1px solid #444444; background-color:#444444; color: #ffffff; border-radius:8px; padding:8px 10px; }
-      .main .thead { background-color:#e9e9e9; width:cover; height:1400px;}
-      .main .thead .blackbox { padding:50px; background-color:#000000; margin:auto; width:1700px; border-radius:12px; text-align:center;}
-      .main .thead .blackbox .txt { color:#ffffff; font-size:40px; font-weight:900;}
-      .main .thead .blackbox .precedentTxt { color:#ffffff; padding:20px 0px 50px 0px; }
-      .main .thead .blackbox .search { width:600px; height:50px; border-radius:30px; text-align:left;}
-      .main .thead .smartBox .thead { margin:auto;padding:70px;}
-      .main .thead .smartBox .thead .txt{ float:left; font-weight:900; font-size:18px; padding:0 0 0 220px;}
-      .main .thead .smartBox .thead .member { float:right; font-size:13px; padding:0 230px 0 0; }
-      .main .thead .smartBox .thead .oneBox { border:1px solid #444444; clear:right; padding:20px; width:210px; height:50px; border-radius:12px; float:left; clear:left; margin:20px 10px 0 220px;}
-      .main .thead .smartBox .thead .oneBox .Th { font-weight:900;}
-      .main .thead .smartBox .thead .oneBox .Td { padding:4px 0; font-size:14px;}
-      .main .thead .smartBox .thead .twoBox { border:1px solid #444444; clear:right; padding:20px; width:210px; height:50px; border-radius:12px; float:left; margin:20px 10px 0 0; }
-      .main .thead .smartBox .thead .twoBox .th { font-weight:900;}
-      .main .thead .smartBox .thead .twoBox .td { padding:4px 0; font-size:14px;}
-      .main .thead .smartBox .thead .threeBox { border:1px solid #444444; clear:right; padding:20px; width:210px; height:50px; border-radius:12px; float:left; margin:20px 10px 0 0;}
-      .main .thead .smartBox .thead .threeBox .th { font-weight:900;}
-      .main .thead .smartBox .thead .threeBox .td { padding:4px 0; font-size:14px;}
-      .main .thead .smartBox .thead .fourBox { border:1px solid #444444; clear:right; padding:20px; width:210px; height:50px; border-radius:12px; float:left; margin:20px 10px 0 0; }
-      .main .thead .smartBox .thead .fourBox .th { font-weight:900;}
-      .main .thead .smartBox .thead .fourBox .td { padding:4px 0; font-size:14px;}
-      .main .thead .smartBox .thead .fiveBox { border:1px solid #444444; clear:right; padding:20px; width:210px; height:50px; border-radius:12px; float:left; margin:20px 10px 0 0; }
-      .main .thead .smartBox .thead .fiveBox .th { font-weight:900;}
-      .main .thead .smartBox .thead .fiveBox .td { padding:4px 0; font-size:14px;}
-      .main .thead .smartBox .thead .enough .th {padding:30px; font-size:15px;}
-      .main .tfoot {clear:right; padding:50px; background-color:black; color:#ffffff; border-width:100px; text-align:center; }
-      .main .tfoot .txt { font-size:40px; font-weight:900;}
-      .main .tfoot .startbox { border:1px solid #ffffff; padding:10px 80px; background-color:white; color:black; font-weight:500; border-radius:4px; width:100px; margin:auto; margin-top:10px;}
-    </style>
+    <link rel="stylesheet" href="bigCase.css">
   </head>
   <body>
     <div id="homePage">
-      <div class="header">
+      <div class="header row"  >
           <div class="bigcase">빅케이스<span>.</span></div>
-          <div class="singUp">회원가입</div>
+          <div class="signgUp">회원가입</div>
           <div class="login">로그인</div>
           <div class="bigcasePlus">빅케이스plus</div>
       </div>
@@ -84,7 +50,8 @@
               <div class="box"></div>
               <div class="plusStart"></div>
             </div>
-          </div> 
+          </div>
+          <div></div> 
         </div>
         <div class="tbody"></div>
         <div class="tfoot">
